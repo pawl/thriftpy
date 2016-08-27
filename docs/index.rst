@@ -143,6 +143,12 @@ the direct module.
     from thriftpy.transport.transport import TBufferedTransportFactory
     from thriftpy.transport.transport import TFramedTransportFactory
 
+To check if the optimized version is currently used, you should see "cybin" mentioned in the output below:
+```
+>>> from thriftpy.protocol import TCyBinaryProtocol, TCyBinaryProtocolFactory
+>>> TCyBinaryProtocol
+<type 'cybin.TCyBinaryProtocol'>
+```
 
 Better Module
 -------------
